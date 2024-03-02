@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_CellularDestabilization</defName>
         <label>cellular destabilization</label>
         <description>Bombard a pawn's body with radiation to induce vomiting, weaken their immune system, and potentially give them carcinoma.</description>
@@ -25,7 +25,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef Name="SHG_Radiomancer_DrainLinkAbility" ParentName="SHGPowerAbilitiesBase" Abstract="True">
+    <AbilityDef Name="SHG_Radiomancer_DrainLinkAbility" ParentName="SHG_JtR_PowerAbilitiesBase" Abstract="True">
         <cooldownTicksRange>10000</cooldownTicksRange>
         <statBases>
             <Ability_Duration>168</Ability_Duration>
@@ -120,7 +120,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_RapidAging</defName>
         <label>rapid aging</label>
         <description>Shoot a small amount of radiation into another pawn's body to cause their cells to begin rapidly deteriorating, making them age an entire decade over the span of one hour.\n\nWhile this won't have a notable effect on younger pawns, pawns already near the end of their lifespan may end up developing various health issues as a result of this ability.</description>
@@ -149,7 +149,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_DangerousAura</defName>
         <label>dangerous aura</label>
         <description>Release radioactive energy in an aura around the radiomancer to cause all non-radiomancer's to suffer penalties. This aura remains until dispelled, and drains radiation over time.</description>
@@ -163,7 +163,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_DangerousAura_Deactivate</defName>
         <label>stop aura</label>
         <description>Stop releasing energy everywhere.</description>

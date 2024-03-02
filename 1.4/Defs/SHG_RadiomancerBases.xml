@@ -55,4 +55,35 @@
         <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
         <marketValueFactor>1.1</marketValueFactor>
     </GeneDef>
+
+    <AbilityCategoryDef>
+        <defName>SuperPowers</defName>
+        <displayOrder>2000</displayOrder>
+    </AbilityCategoryDef>
+
+    <AbilityDef Abstract="True" Name="SHG_JtR_PowerAbilitiesBase">
+        <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+        <aiCanUse>True</aiCanUse>
+        <cooldownTicksRange>100</cooldownTicksRange>
+        <category>SuperPowers</category>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1</warmupTime>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef Abstract="True" ParentName="SHG_JtR_PowerAbilitiesBase" Name="SHG_JtR_SelfCastBase">
+        <targetRequired>false</targetRequired>
+        <showCastingProgressBar>true</showCastingProgressBar>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <requireLineOfSight>false</requireLineOfSight>
+            <range>0.9</range>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
 </Defs>

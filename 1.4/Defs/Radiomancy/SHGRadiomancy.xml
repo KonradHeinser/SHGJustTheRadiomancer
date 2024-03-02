@@ -124,7 +124,7 @@
         </stages>
     </ThoughtDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_DissipateEnergy</defName>
         <label>dissipate energy</label>
         <description>Safely releases some of the energy the radiomancer has stored into the environment. The long time it takes for the radiomancer to cast this and for it to be usable again make it a less than ideal purger of radiation.</description>
@@ -148,7 +148,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_GatherEnergy</defName>
         <label>gather energy</label>
         <description>Absorb small amounts of energy within the air around the radiomancer. The long time it takes for the radiomancer to cast this and for it to be usable again make it a less than ideal source of radiation.</description>

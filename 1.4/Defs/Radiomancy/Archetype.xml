@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <GeneDef ParentName="SHG_ArchetypeBase">
+    <GeneDef>
         <defName>SHG_Archetypes_Radiomancer</defName>
         <label>radiomancer</label>
         <description>Radiomancers manipulate the energies of their body and the air around them to create extraordinary effects. Unlike Psionists and Hemomancers, Radiomancers deal with energy in its purist form, allowing them to gain radioactive energy from various sources, though they technically cannot store much at any given time. The creation of this gene was achieved by splicing specific portions of a Superhero Gene, then recombining them into something that essentially makes the carrier a biological energy converter.</description>
-        <iconPath>Archetypes/Gene_Radiomancer</iconPath>
+        <iconPath>Radiomancer/Gene_Radiomancer</iconPath>
         <prerequisite />
         <geneClass>EBSGFramework.ResourceGene</geneClass>
+        <displayCategory>Archite</displayCategory>
+        <biostatArc>1</biostatArc>
         <resourceGizmoThresholds>
             <li>0.25</li>
             <li>0.5</li>
@@ -18,7 +20,6 @@
         <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
         <resourceDescription>A special form of radiation that a specific type of superhero can generate and dissipate using energy reactions within their body.</resourceDescription>
         <resourceLabel>radiation</resourceLabel>
-        <biostatArc>1</biostatArc>
         <resourceLossPerDay>0</resourceLossPerDay>
         <displayOrderInCategory>-0.8</displayOrderInCategory>
         <customEffectDescriptions>

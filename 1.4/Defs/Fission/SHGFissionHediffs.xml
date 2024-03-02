@@ -109,10 +109,9 @@
                     <li><geneSet><li>SHG_Radiomancer_RampantRegeneration</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_MiniatureSun</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_ExcitableCells</li></geneSet></li>
-                    <li><geneSet><li>SHG_Radiomancer_Mutate</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_ReformPart</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_ReverseAging</li></geneSet></li>
-                    <!--<li><geneSet><li>SHG_Radiomancer_RefocusEnergy</li></geneSet></li>-->
+                    <li><geneSet><li>SHG_Radiomancer_RefocusEnergy</li></geneSet></li>
 
                     <!--Fusion Genes-->
                     <li><geneSet><li>SHG_Radiomancer_Bioreactor</li></geneSet></li>
@@ -123,38 +122,6 @@
                     <li><geneSet><li>SHG_Radiomancer_SolarRecharging</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_SolarRegeneration</li></geneSet></li>
                     <li><geneSet><li>SHG_Radiomancer_UndyingSun</li></geneSet></li>
-                </geneSets>
-            </li>
-        </comps>
-    </HediffDef>
-
-    <HediffDef>
-        <defName>SHG_Radiomancer_Mutate</defName>       
-        <label>mutating</label>
-        <description>This pawn will generate new genes once you STOP LOOKING AT DEVMODE STUFF AND UNPAUSE YOU CHEATER. Unless you're a fellow modder, in which case welcome! You won't get much use from this tooltip, but the SHGFissionHediffs.xml file contains the randomization data for the mutating hediff.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <stages>
-			<li>
-                <becomeVisible>false</becomeVisible>
-            </li>
-        </stages>
-        <comps>
-            <li Class="EBSGFramework.HediffCompProperties_GainRandomGeneSet">
-                <showMessage>False</showMessage>
-                <geneSets>
-                    <li><geneSet><li>SHG_DoubleHearted</li></geneSet></li>
-                    <li><geneSet><li>SHG_SuperPsychicPotential</li></geneSet></li>
-                    <li><geneSet><li>SHG_SuperDenseBones</li></geneSet></li>
-                    <li><geneSet><li>SHG_Blindsight</li></geneSet></li>
-                    <li><geneSet><li>SHG_GhostlyPresence</li></geneSet></li>
-                    <li><geneSet><li>SHG_Prey</li></geneSet></li>
-                    <li><geneSet><li>SHG_Predator</li></geneSet></li>
-                    <li><geneSet><li>SHG_AdrenalineJunkie</li></geneSet></li>
-                    <li><geneSet><li>SHG_Berserker</li></geneSet></li>
-                    <li><geneSet><li>SHG_MadGenius</li></geneSet></li>
-                    <li><geneSet><li>SHG_Technophile</li></geneSet></li>
-                    <li><geneSet><li>SHG_Naturalist</li></geneSet></li>
-                    <li><geneSet><li>SHG_HALK</li></geneSet></li>
                 </geneSets>
             </li>
         </comps>

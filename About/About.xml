@@ -8,7 +8,6 @@
     </supportedVersions>
     
     <modDependencies>
-
         <li>
             <packageId>ludeon.rimworld.biotech</packageId>
             <displayName>Biotech</displayName>
@@ -29,9 +28,9 @@
     </loadAfter>
 
     <description>
-Expanded Biotech Style Genes(EBSG) is the step beyond [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2985153870]More Biotech Style Genes[/url]. Where that series sought to expand ranges that already exist, this series seeks to add ranges that should exist. You get gene ranges that alter sleep fall rate, but why not a range for changing the rate it recovers? If you can have fire resistance genes, why not have genes to resist other types of damage like frostbite and acid?
+This mod has all of the radiomancy stuff from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2980061828]Superhero Genes Base[/url] without all the other stuff. Due to the amount of extra code involved, this will require the EBSG Framework, but other than taking the code from a different source it should work exactly the same as the SHG variant. One of the genes (Mutate) is not available in this version due to it relying on the existence of SHG specific genes.
 
-
+The Radiomancer gene itself is in the Archite section, and requires you enable seeing those at the bottom of the Create Xenotype menu.
 
 Included in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3020821838]Expanded Biotech Style Genes - All in One[/url].
 
