@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyDecay</defName>
+        <label>radiomancy powers - decay</label>
+        <displayPriorityInXenotype>969.9</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyEmission</defName>
+        <label>radiomancy powers - emission</label>
+        <displayPriorityInXenotype>969.8</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyFission</defName>
+        <label>radiomancy powers - fission</label>
+        <displayPriorityInXenotype>969.7</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyFusion</defName>
+        <label>radiomancy powers - fusion</label>
+        <displayPriorityInXenotype>969.6</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Name="SuperPowersRadiomancyDecayBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyDecay</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyEmissionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyEmission</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyFissionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyFission</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyFusionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyFusion</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+</Defs>
