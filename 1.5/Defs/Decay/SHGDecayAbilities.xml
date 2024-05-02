@@ -9,7 +9,7 @@
             <range>10</range>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityAbilityValidator">
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
                 <targetHasNoneOfGenes>
                     <li>SHG_Archetypes_Radiomancer</li>
                 </targetHasNoneOfGenes>
@@ -18,7 +18,7 @@
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
                 <hediffDef>SHG_Radiomancer_CellularDestabilization</hediffDef>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.20</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
@@ -43,12 +43,12 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityAbilityValidator">
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
                 <targetHasNoneOfGenes>
                     <li>SHG_Archetypes_Radiomancer</li>
                 </targetHasNoneOfGenes>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.20</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
@@ -61,7 +61,7 @@
         <description>Create a link between this radiomancer and another pawn to begin draining some of that pawn's energy in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_DrainEnergy</iconPath>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_CreateLinkedHediff">
+            <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
                 <hediffOnCaster>SHG_Radiomancer_DrainEnergy</hediffOnCaster>
                 <hediffOnTarget>SHG_Radiomancer_DrainEnergy_Debuff</hediffOnTarget>
             </li>
@@ -74,7 +74,7 @@
         <description>Create a link between this radiomancer and another pawn to weaken the bonds between their skin cells in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will only produce a total of 10 radiocative energy due to this ability being more focused on destruction than siphoning.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_WeakenSkin</iconPath>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_CreateLinkedHediff">
+            <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
                 <hediffOnCaster>SHG_Radiomancer_WeakenSkin</hediffOnCaster>
                 <hediffOnTarget>SHG_Radiomancer_WeakenSkin_Debuff</hediffOnTarget>
             </li>
@@ -87,7 +87,7 @@
         <description>Create a link between this radiomancer and another pawn to sap the pawn's strength in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy through life force conversion.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_SapStrength</iconPath>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_CreateLinkedHediff">
+            <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
                 <hediffOnCaster>SHG_Radiomancer_SapStrength</hediffOnCaster>
                 <hediffOnTarget>SHG_Radiomancer_SapStrength_Debuff</hediffOnTarget>
             </li>
@@ -100,7 +100,7 @@
         <description>Create a link between this radiomancer and another pawn to slow the pawn's healing and immunity gain in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy through life force conversion.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_DrainLife</iconPath>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_CreateLinkedHediff">
+            <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
                 <hediffOnCaster>SHG_Radiomancer_DrainLife</hediffOnCaster>
                 <hediffOnTarget>SHG_Radiomancer_DrainLife_Debuff</hediffOnTarget>
             </li>
@@ -113,7 +113,7 @@
         <description>Create a link between this radiomancer and another pawn to intercept some of the electric impulses flowing through the target's brain in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will only produce a total of 5 radiocative energy due to how difficult it is to intercept these pulses of energy.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_SlowSynapses</iconPath>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_CreateLinkedHediff">
+            <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
                 <hediffOnCaster>SHG_Radiomancer_SlowSynapses</hediffOnCaster>
                 <hediffOnTarget>SHG_Radiomancer_SlowSynapses_Debuff</hediffOnTarget>
             </li>
@@ -132,7 +132,7 @@
             <range>30</range>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityAbilityValidator">
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
                 <targetHasNoneOfGenes>
                     <li>SHG_Archetypes_Radiomancer</li>
                 </targetHasNoneOfGenes>
@@ -142,14 +142,14 @@
                 <hediffDef>SHG_Radiomancer_RapidAging</hediffDef>
                 <replaceExisting>true</replaceExisting>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.30</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_DangerousAura</defName>
         <label>dangerous aura</label>
         <description>Release radioactive energy in an aura around the radiomancer to cause all non-radiomancer's to suffer penalties. This aura remains until dispelled, and drains radiation over time.</description>
@@ -164,7 +164,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_DangerousAura_Deactivate</defName>
         <label>stop aura</label>
         <description>Stop releasing energy everywhere.</description>

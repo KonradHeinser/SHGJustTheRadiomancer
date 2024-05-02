@@ -19,7 +19,7 @@
         <label>drain energy</label>
         <description>Radiomancers with this gene can create a link between themselves and another pawn to begin draining some of that pawn's energy in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_DrainEnergy</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>1</displayOrderInCategory>
         <resourceLossPerDay>-2.4</resourceLossPerDay>
         <customEffectDescriptions>
@@ -30,7 +30,7 @@
             <li>SHG_Radiomancer_DrainEnergy</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_DrainEnergy</li>
@@ -44,7 +44,7 @@
         <label>weaken skin</label>
         <description>Radiomancers with this gene can create a link between themselves and another pawn to weaken the bonds between their skin cells in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will only produce a total of 10 radiocative energy due to this ability being more focused on destruction than siphoning.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_WeakenSkin</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>2</displayOrderInCategory>
         <resourceLossPerDay>-0.6</resourceLossPerDay>
         <customEffectDescriptions>
@@ -55,7 +55,7 @@
             <li>SHG_Radiomancer_WeakenSkin</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_WeakenSkin</li>
@@ -69,7 +69,7 @@
         <label>sap strength</label>
         <description>Radiomancers with this gene can create a link between themselves and another pawn to sap the pawn's strength in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy through life force conversion.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_SapStrength</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>3</displayOrderInCategory>
         <resourceLossPerDay>-2.4</resourceLossPerDay>
         <customEffectDescriptions>
@@ -80,7 +80,7 @@
             <li>SHG_Radiomancer_SapStrength</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_SapStrength</li>
@@ -94,7 +94,7 @@
         <label>drain life</label>
         <description>Radiomancers with this gene can create a link between themselves and another pawn to slow the pawn's healing and immunity gain in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will produce a total of 40 radiocative energy through life force conversion.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_DrainLife</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>4</displayOrderInCategory>
         <resourceLossPerDay>-2.4</resourceLossPerDay>
         <customEffectDescriptions>
@@ -105,7 +105,7 @@
             <li>SHG_Radiomancer_DrainLife</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_DrainLife</li>
@@ -119,7 +119,7 @@
         <label>slow synapses</label>
         <description>Radiomancers with this gene can create a link between themselves and another pawn to intercept some of the electric impulses flowing through the target's brain in exchange for increasing the radiomancer's radiation regeneration. If the target survives for the entire duration, this ability will only produce a total of 5 radiocative energy due to how difficult it is to intercept these pulses of energy.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_SlowSynapses</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>5</displayOrderInCategory>
         <resourceLossPerDay>-0.3</resourceLossPerDay>
         <customEffectDescriptions>
@@ -130,7 +130,7 @@
             <li>SHG_Radiomancer_SlowSynapses</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_SlowSynapses</li>
@@ -155,7 +155,7 @@
         <label>dangerous aura</label>
         <description>Radiomancers with this gene can release radioactive energy in an aura around themselves to cause all non-radiomancer's to suffer penalties. This aura remains until dispelled, and drains radiation over time.</description>
         <iconPath>Radiomancer/Decay/Gene_Radiomancer_DangerousAura</iconPath>
-        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
+        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
         <displayOrderInCategory>7</displayOrderInCategory>
         <resourceLossPerDay>1</resourceLossPerDay>
         <customEffectDescriptions>
@@ -165,7 +165,7 @@
             <li>SHG_Radiomancer_DangerousAura</li>
         </abilities>
         <modExtensions>
-            <li Class="SuperHeroGenesBase.DRGExtension">
+            <li Class="EBSGFramework.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_DangerousAura</li>

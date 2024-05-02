@@ -9,12 +9,12 @@
         <initialSeverity>0.001</initialSeverity>
         <maxSeverity>6</maxSeverity>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_SeverityFromResource">
+            <li Class="EBSGFramework.HediffCompProperties_SeverityFromResource">
                 <severityPerHourFull>0.05</severityPerHourFull>
                 <severityPerHourResource>-0.25</severityPerHourResource>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_DisplaySeverity">
+            <li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
                 <prependString>Charge : </prependString>
                 <appendString>%</appendString>
                 <postFactor>20</postFactor>
@@ -33,12 +33,12 @@
         <initialSeverity>0.001</initialSeverity>
         <stages />
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_SeverityFromResource">
+            <li Class="EBSGFramework.HediffCompProperties_SeverityFromResource">
                 <severityPerHourFull>0.01</severityPerHourFull>
                 <severityPerHourResource>-0.1</severityPerHourResource>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_GiveHediffsInRangeGeneRestricting">
+            <li Class="EBSGFramework.HediffCompProperties_GiveHediffsInRangeGeneRestricting">
                 <range>20</range>
                 <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
                 <targetingParameters>
@@ -53,7 +53,7 @@
                 </forbiddenGenes>
                 <hediff>SHG_Radiomancer_ExpelledRadiation</hediff>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_DisplaySeverity">
+            <li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
                 <prependString>Minimum hours remaining : </prependString>
                 <postFactor>10</postFactor>
                 <roundDigits>1</roundDigits>
@@ -177,7 +177,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_CreateOtherHediffs">
+            <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
                 <hediffSets>
                     <li>
                         <hediffDef>SHG_Radiomancer_InfusedMusclesOvercharge</hediffDef>
@@ -286,7 +286,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_CreateOtherHediffs">
+            <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
                 <hediffSets>
                     <li>
                         <hediffDef>SHG_Radiomancer_EnergizedNeuronsOvercharge</hediffDef>
@@ -395,7 +395,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_ExplodeWhenDamaged">
+            <li Class="EBSGFramework.HediffCompProperties_ExplodeWhenDamaged">
                 <radius>1.9</radius>
                 <damageDef>Burn</damageDef>
                 <injureSelf>false</injureSelf>
@@ -406,7 +406,7 @@
                 <damageAmount>5</damageAmount>
                 <minSeverity>0.5</minSeverity>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_CreateOtherHediffs">
+            <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
                 <hediffSets>
                     <li>
                         <hediffDef>SHG_Radiomancer_EnergyArmorOvercharge</hediffDef>
@@ -445,7 +445,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_SeverityByLightLevel">
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByLightLevel">
                 <lightToSeverityCurve>
                     <points>
                         <li>(0, 0.9)</li>
@@ -461,7 +461,7 @@
                     </points>
                 </timeToSeverityCurve>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_TieredRegeneration">
+            <li Class="EBSGFramework.HediffCompProperties_TieredRegeneration">
                 <healWhileRegrowing>True</healWhileRegrowing>
                 <regenSets>
                     <li>
@@ -498,7 +498,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_SeverityByLightLevel">
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByLightLevel">
                 <lightToSeverityCurve>
                     <points>
                         <li>(0, 0.9)</li>

@@ -168,7 +168,7 @@
         <maxSeverity>1.0</maxSeverity>
         <stages />
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_Aging">
+            <li Class="EBSGFramework.HediffCompProperties_Aging">
                 <ageChangePerHour>10</ageChangePerHour>
             </li>
             <li Class="HediffCompProperties_Disappears">
@@ -187,7 +187,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_GiveHediffsInRangeGeneRestricting">
+            <li Class="EBSGFramework.HediffCompProperties_GiveHediffsInRangeGeneRestricting">
                 <range>20</range>
                 <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
                 <targetingParameters>

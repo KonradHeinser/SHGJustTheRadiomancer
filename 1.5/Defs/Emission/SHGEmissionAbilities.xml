@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_ExplosiveBlows</defName>
         <label>explosive blows</label>
         <description>Create a charge that will be released the next time the pawn attacks something in melee combat. This release causes damage additional damage to both the target and all hostile pawns near the target, with any non-hostiles being unaffected.</description>
@@ -14,7 +14,7 @@
                 <hediffDef>SHG_Radiomancer_ExplosiveBlows</hediffDef>
                 <severity>1</severity>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.10</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
@@ -41,7 +41,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceToBattery">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceToBattery">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <maxPercent>0.5</maxPercent>
                 <conversionEfficiency>100</conversionEfficiency>
@@ -67,25 +67,25 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityAbilityValidator">
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
                 <targetHasNoneOfHediffs>
                     <li>SHG_Radiomancer_LimitlessPotential</li>
                 </targetHasNoneOfHediffs>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityGiveMultipleHediffs">
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li><hediffDef>SHG_Radiomancer_LimitlessPotential</hediffDef></li>
                     <li><hediffDef>SHG_EverEvolving_Enlightenment</hediffDef></li>
                 </hediffsToGive>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.1</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_NuclearWinter</defName>
         <label>nuclear winter</label>
         <description>Release large amounts of energy up into the atmosphere to cause the local area to fall into an exceptionally cold period for an entire quadrum. This ability won't work if there is a heat wave, cold snap, or other similar condition already active.</description>
@@ -98,11 +98,11 @@
             <warmupTime>10</warmupTime>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_TriggerGameCondition">
+            <li Class="EBSGFramework.CompProperties_TriggerGameCondition">
                 <gameCondition>ColdSnap</gameCondition>
                 <ticks>900000</ticks> <!--One quadrum-->
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.90</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
@@ -122,7 +122,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_EnergyBlast">
+            <li Class="EBSGFramework.CompProperties_EnergyBlast">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <convertPercentage>0.5</convertPercentage>
                 <radiusFactor>0.5</radiusFactor>
@@ -135,20 +135,33 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerBlastBase">
+    <AbilityDef>
         <defName>SHG_Radiomancer_AshesToAshes</defName>
         <label>ashes to ashes</label>
         <description>Use a bit of radioactive energy to trigger spontaneous combustion in an area. This will release a blast of energy in the area that instantly sets every flammable thing on fire. Walls will stop this blast of energy, though if said wall is flammable, it will also catch fire. If the wall itself is targeted, then the energy will attempt to go through both sides of the wall.</description>
         <iconPath>Radiomancer/Emission/Gene_Radiomancer_AshesToAshes</iconPath>
+        <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+        <aiCanUse>True</aiCanUse>
+        <cooldownTicksRange>100</cooldownTicksRange>
+        <category>SuperPowers</category>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>25</range>
+            <warmupTime>2</warmupTime>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_SHGBlast">
+            <li Class="EBSGFramework.CompProperties_EBSGBlast">
                 <damageDef>Flame</damageDef>
                 <damageAmount>1</damageAmount>
                 <radius>10</radius>
                 <armorPenetration>0.8</armorPenetration>
                 <chanceToStartFire>1</chanceToStartFire>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.10</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
@@ -173,23 +186,23 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityAbilityValidator">
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
                 <targetHasNoneOfGenes>
                     <li>SHG_Archetypes_Radiomancer</li>
                 </targetHasNoneOfGenes>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_InstantKill">
+            <li Class="EBSGFramework.CompProperties_InstantKill">
                 <bloodFilthToSpawnRange>10</bloodFilthToSpawnRange>
                 <filthReplacement>Filth_Ash</filthReplacement>
             </li>
-            <li Class="SuperHeroGenesBase.CompProperties_AbilityResourceCost">
+            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>1.00</resourceCost>
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
             </li>
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGSelfCastBase">
+    <AbilityDef ParentName="SHG_JtR_SelfCastBase">
         <defName>SHG_Radiomancer_IAmBecomeDeath</defName>
         <label>i am become death</label>
         <description>Create a burst of energy containing every bit of radiation currently stored. The more radiation stored, the larger and more damaging this burst is. Radius is equal to half of the radiomancer's stored radiation, and damage is 10 times stored radiation at the center. The only safe pawn in this burst is the caster.\n\nThis ability usually leaves everything around the caster dead, and can outright destroy buildings at high radiation levels. At full radiation levels this can destroy almost everything on around 20-30% of the map. On the bright side, no radiation cleanup.</description>
@@ -199,7 +212,7 @@
             <warmupTime>3</warmupTime>
         </verbProperties>
         <comps>
-            <li Class="SuperHeroGenesBase.CompProperties_EnergyBurst">
+            <li Class="EBSGFramework.CompProperties_EnergyBurst">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <convertPercentage>1</convertPercentage>
                 <radiusFactor>0.5</radiusFactor>

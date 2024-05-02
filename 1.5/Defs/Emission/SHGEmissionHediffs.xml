@@ -32,10 +32,10 @@
         <initialSeverity>1</initialSeverity>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_SeverityChangePerAttack">
+            <li Class="EBSGFramework.HediffCompProperties_SeverityChangePerAttack">
                 <changePerMeleeAttack>-1</changePerMeleeAttack>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_ExplodingMeleeAttacks">
+            <li Class="EBSGFramework.HediffCompProperties_ExplodingMeleeAttacks">
                 <radius>2</radius>
                 <damageDef>Burn</damageDef>
                 <injureSelf>false</injureSelf>
@@ -45,7 +45,7 @@
                 <extraGasType>None</extraGasType>
                 <damageAmount>20</damageAmount>
             </li>
-            <li Class="SuperHeroGenesBase.HediffCompProperties_DisplaySeverity">
+            <li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
                 <appendString> charge(s) left</appendString>
                 <roundDigits>0</roundDigits>
             </li>
