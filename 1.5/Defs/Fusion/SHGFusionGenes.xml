@@ -6,7 +6,7 @@
         <description>Radiomancers with this gene can convert their own nutrition and blood into raw radioactive energy.</description>
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_Bioreactor</iconPath>
         <displayOrderInCategory>0</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <geneClass>SuperHeroGenesBase.HediffAdder</geneClass>
         <customEffectDescriptions>
             <li>Removes the gather energy ability.</li>
             <li>Gives the hemogen conversion ability if hemogenic.</li>
@@ -16,7 +16,7 @@
             <li>SHG_Radiomancer_BloodConversion</li>
         </abilities>
         <modExtensions>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
                 <geneAbilities>
                     <li>
                         <requireOneOfGenes>
@@ -32,7 +32,7 @@
     </GeneDef>
 
     <GeneDef ParentName="SuperPowersRadiomancyFusionBase" Name="SHG_Radiomancer_FusionEnhancedBase" Abstract="True">
-        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
+        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
         <resourceLossPerDay>1</resourceLossPerDay>
         <customEffectDescriptions>
             <li>Reaching 120% charge will start causing radiation loss as the body starts to expel radiation before it becomes harmful to the radiomancer.</li>
@@ -48,13 +48,13 @@
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_InfusedMuscles</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
         <modExtensions>
-            <li Class="EBSGFramework.DRGExtension">
+            <li Class="SuperHeroGenesBase.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_InfusedMusclesOvercharge</li>
                 </requiredHediffs>
             </li>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
 				<hediffsToApply>
 					<li>
 						<hediff>SHG_Radiomancer_InfusedMuscles</hediff>
@@ -71,13 +71,13 @@
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_EnergizedNeurons</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
         <modExtensions>
-            <li Class="EBSGFramework.DRGExtension">
+            <li Class="SuperHeroGenesBase.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_EnergizedNeuronsOvercharge</li>
                 </requiredHediffs>
             </li>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
 				<hediffsToApply>
 					<li>
 						<hediff>SHG_Radiomancer_EnergizedNeurons</hediff>
@@ -94,13 +94,13 @@
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_EnergyArmor</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
         <modExtensions>
-            <li Class="EBSGFramework.DRGExtension">
+            <li Class="SuperHeroGenesBase.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <requiredHediffs>
                     <li>SHG_Radiomancer_EnergyArmorOvercharge</li>
                 </requiredHediffs>
             </li>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
 				<hediffsToApply>
 					<li>
 						<hediff>SHG_Radiomancer_EnergyArmor</hediff>
@@ -129,7 +129,7 @@
         <label>solar recharging</label>
         <description>Radiomancers with this gene gain large amounts of energy by standing in sources of really bright light, like the sun or sun lamps.</description>
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_SolarRecharging</iconPath>
-        <geneClass>EBSGFramework.ResourceDrainGene</geneClass>
+        <geneClass>SuperHeroGenesBase.ResourceDrainGene</geneClass>
         <displayOrderInCategory>5</displayOrderInCategory>
         <resourceLossPerDay>-1</resourceLossPerDay>
         <customEffectDescriptions>
@@ -138,7 +138,7 @@
             <li>Light created from sun lamps, the star rift created by "open rift to star", the star created from "miniature sun", and any other source that creates over 60% light level activate this ability.</li>
         </customEffectDescriptions>
         <modExtensions>
-            <li Class="EBSGFramework.DRGExtension">
+            <li Class="SuperHeroGenesBase.DRGExtension">
                 <mainResourceGene>SHG_Archetypes_Radiomancer</mainResourceGene>
                 <minLightLevel>0.6</minLightLevel>
             </li>
@@ -150,10 +150,10 @@
         <label>solar regeneration</label>
         <description>Radiomancers with this gene quickly heal while in sunlight, natural or artificial, and if they remain in sunlight for an entire, unbroken hour they can even regrow parts.</description>
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_SolarRegeneration</iconPath>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <geneClass>SuperHeroGenesBase.HediffAdder</geneClass>
         <displayOrderInCategory>6</displayOrderInCategory>
         <modExtensions>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
                 <hediffsToApply>
                     <li>
                         <hediff>SHG_Radiomancer_SolarRegeneration</hediff>
@@ -169,10 +169,10 @@
         <label>undying sun</label>
         <description>Radiomancers with this gene are exceptionally difficult to kill while in sunlight, even if said sunlight is artificial. Their body uses sunlight to reinforce their skin, destroy anything internally that is actively causing them harm, and stops the pawn from suffering from bloodloss.</description>
         <iconPath>Radiomancer/Fusion/Gene_Radiomancer_UndyingSun</iconPath>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <geneClass>SuperHeroGenesBase.HediffAdder</geneClass>
         <displayOrderInCategory>7</displayOrderInCategory>
         <modExtensions>
-            <li Class="EBSGFramework.EBSGExtension">
+            <li Class="SuperHeroGenesBase.SHGExtension">
                 <hediffsToApply>
                     <li>
                         <hediff>SHG_Radiomancer_UndyingSun</hediff>
