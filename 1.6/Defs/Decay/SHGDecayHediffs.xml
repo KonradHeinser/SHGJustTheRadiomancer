@@ -99,7 +99,6 @@
                     <MoveSpeed>0.75</MoveSpeed>
                     <MeleeDamageFactor>0.75</MeleeDamageFactor>
                     <CarryingCapacity>0.75</CarryingCapacity>
-                    <CarryBulk MayRequire="ceteam.combatextended">0.75</CarryBulk>
                 </statFactors>
             </li>
         </stages>
