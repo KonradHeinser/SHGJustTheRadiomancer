@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_RampantRegeneration</defName>
         <label>rampant regeneration</label>
         <description>Inject some radioactive energy into a pawn's blood to cause them to start recovering from wounds at an unbelievable pace. Even lost parts can start regrowing while in this state. Unfortunately, this comes with an extreme risk that some of their cells will be negatively affected by the radioactive energy, resulting in carcinoma.\n\nDue to the nature of this ability, it will not work on other radiomancers as their body will just attempt to absorb the radiation, and fail due to its characteristics.</description>
@@ -30,7 +30,46 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+        <ThingDef ParentName="EtherealThingBase">
+        <defName>SHG_Psionist_Star</defName>
+        <label>star</label>
+        <thingClass>ThingWithComps</thingClass>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <drawOffscreen>true</drawOffscreen>
+        <category>PsychicEmitter</category>
+        <altitudeLayer>MoteOverheadLow</altitudeLayer>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Radiomancer/Circle</texPath>
+            <shaderType>MoteGlowDistorted</shaderType>
+            <color>(255, 255, 245)</color>
+            <drawSize>10</drawSize>
+            <shaderParameters>
+                <_DistortionTex>/Other/Ripples</_DistortionTex>
+                <_distortionIntensity>0.05</_distortionIntensity>
+                <_DistortionScale>0.7</_DistortionScale>
+                <_distortionScrollSpeed>(0.07, 0.07, 0.0)</_distortionScrollSpeed>
+            </shaderParameters>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <overlightRadius>10</overlightRadius>
+                <glowRadius>20</glowRadius>
+                <glowColor>(217,217,208,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>1000</heatPerSecond>
+                <heatPushMaxTemperature>1000</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_DestroyAfterDelay">
+                <delayTicks>300000</delayTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_MiniatureSun</defName>
         <label>miniature sun</label>
         <description>Create an exceptionally small star that lets out a massive amount of heat and light. This star will be stable for about a day before the safety measures within it force the energy to dissipate.</description>
@@ -58,7 +97,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_ExcitableCells</defName>
         <label>excitable cells</label>
         <description>Inject some radioactive energy into a pawn's blood to cause them to start recovering from infections at an unbelievable pace due to the energy that was injected into their body. Unfortunately, this comes with an notable risk that some of their cells will be negatively affected by the radioactive energy.\n\nDue to the nature of this ability, it will not work on other radiomancers as their body will just attempt to absorb the radiation, and fail due to its characteristics.</description>
@@ -134,7 +173,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="SHGPowerAbilitiesBase">
+    <AbilityDef ParentName="SHG_JtR_PowerAbilitiesBase">
         <defName>SHG_Radiomancer_ReverseAging</defName>
         <label>reverse aging</label>
         <description>Apply a small amount of radiation on another pawn to rejuvenate internal parts, reducing the pawn's biological age by a year. Due to the nature of this ability, it can't reduce the age of a pawn below 18 years old, and can't help much to get rid of chronic ailments.</description>
