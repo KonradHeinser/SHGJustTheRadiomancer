@@ -88,19 +88,7 @@
     </AbilityDef>
 
     <!--Flaw-->
-
-        <!-- <GeneDef Name="SHG_FlawBase" Abstract="True">
-        <displayCategory>SuperFlaws</displayCategory>
-        <biostatCpx>0</biostatCpx>
-    </GeneDef>
-
-    <HediffDef Name="SHG_SpecialHediffBase" Abstract="True">
-        <hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>False</scenarioCanAdd>
-		<isBad>False</isBad>
-        <everCurableByItem>False</everCurableByItem>
-    </HediffDef> -->
-
+    
     <GeneCategoryDef>
         <defName>SuperFlaws</defName>
         <label>super flaws</label>
