@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyDecay</defName>
+        <label>radiomancy powers - decay</label>
+        <displayPriorityInXenotype>969.9</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyEmission</defName>
+        <label>radiomancy powers - emission</label>
+        <displayPriorityInXenotype>969.8</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyFission</defName>
+        <label>radiomancy powers - fission</label>
+        <displayPriorityInXenotype>969.7</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>SuperPowersRadiomancyFusion</defName>
+        <label>radiomancy powers - fusion</label>
+        <displayPriorityInXenotype>969.6</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Name="SuperPowersRadiomancyDecayBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyDecay</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyEmissionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyEmission</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyFissionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyFission</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef Name="SuperPowersRadiomancyFusionBase" Abstract="True">
+        <displayCategory>SuperPowersRadiomancyFusion</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <marketValueFactor>1.1</marketValueFactor>
+    </GeneDef>
+
+    <AbilityCategoryDef>
+        <defName>SuperPowers</defName>
+        <displayOrder>2000</displayOrder>
+    </AbilityCategoryDef>
+
+    <AbilityDef Abstract="True" Name="SHG_JtR_PowerAbilitiesBase">
+        <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+        <aiCanUse>True</aiCanUse>
+        <cooldownTicksRange>100</cooldownTicksRange>
+        <category>SuperPowers</category>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1</warmupTime>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef Abstract="True" ParentName="SHG_JtR_PowerAbilitiesBase" Name="SHG_JtR_SelfCastBase">
+        <targetRequired>false</targetRequired>
+        <showCastingProgressBar>true</showCastingProgressBar>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <requireLineOfSight>false</requireLineOfSight>
+            <range>0.9</range>
+            <drawAimPie>false</drawAimPie>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <!--Flaw-->
+    
+    <GeneCategoryDef>
+        <defName>SuperFlaws</defName>
+        <label>super flaws</label>
+        <displayPriorityInXenotype>999.897</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef>
+        <defName>SHG_Flaw_OverchargedPocket</defName>
+        <label>overcharged pocket</label>
+        <description>Radiomancers with this gene have a pocket of energy in them that they constantly stabilize, but when they die it will cause a massive explosion.</description>
+        <iconPath>Radiomancer/Gene_OverchargedPocket</iconPath>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <prerequisite>SHG_Archetypes_Radiomancer</prerequisite>
+        <displayOrderInCategory>300</displayOrderInCategory>
+        <displayCategory>SuperFlaws</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>5</biostatMet>
+        <customEffectDescriptions>
+            <li>The radiomancer's death causes an explosion with the same power as I Am Become Death at 50 radiation.</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply><li><hediff>SHG_Flaw_OverchargedPocket</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <HediffDef>
+        <defName>SHG_Flaw_OverchargedPocket</defName>
+        <label>overcharged pocket</label>
+        <description>Try not to die or you'll probably end up killing everyone around you.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>False</scenarioCanAdd>
+		<isBad>False</isBad>
+        <everCurableByItem>False</everCurableByItem>
+        <stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_ExplodeOnDeath">
+                <explosion>
+                    <radius>25</radius>
+                    <damageDef>BombSuper</damageDef>
+                    <damageAmount>250</damageAmount>
+                    <exclusions>None</exclusions>
+                </explosion>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>
